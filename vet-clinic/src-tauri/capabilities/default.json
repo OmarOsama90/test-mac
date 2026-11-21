@@ -1,0 +1,14 @@
+{
+  "identifier": "default",
+  "description": "Main window: read/write the case file in the app-data folder, and save/open backups.",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "dialog:default",
+    "fs:allow-exists",
+    "fs:allow-read-text-file",
+    "fs:allow-write-text-file",
+    "fs:allow-copy-file",
+    { "identifier": "fs:scope", "allow": [{ "path": "$APPDATA" }, { "path": "$APPDATA/**" }] }
+  ]
+}

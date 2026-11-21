@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn { @apply px-4 py-2 rounded-xl bg-white border shadow-sm hover:bg-gray-50 active:scale-95 transition; }
+  .inputSoft { @apply px-3 py-2 rounded-xl border bg-white focus:outline-none focus:ring-2 focus:ring-teal-300; }
+}
+body { -webkit-font-smoothing: antialiased; }
